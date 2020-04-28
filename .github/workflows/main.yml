@@ -23,11 +23,13 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: npm install
+    #- name: Run a one-line script
+    #  run: npm install
 
     # Runs a set of commands using the runners shell
-    #- name: Run a multi-line script
-    #  run: |
-    #    echo Add other actions to build,
-    #    echo test, and deploy your project.
+    - name: Run a multi-line script
+      run: |
+        npm init --yes
+        npm install @webcomponents/custom-elements --save
+        npm install @clr/icons --save
+        npm install @clr/ui --save
