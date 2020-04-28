@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hypervisor dashboard</title>
+    <!--CSS normal-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />-->
+    <!-- <link rel="stylesheet" href="node_modules/@clr/ui/clr-ui.min.css" /> -->
+    <!--CSS dark-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" /> -->
+    <link rel="stylesheet" href="node_modules/@clr/ui/clr-ui-dark.min.css" />
+    <!--CLARITY ICONS STYLE-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/clarity-icons/clarity-icons.min.css"> -->
+    <link rel="stylesheet" href="node_modules/@clr/icons/clr-icons.min.css">
+    <!--CLARITY ICONS DEPENDENCY: CUSTOM ELEMENTS POLYFILL-->
+    <!-- <script src="https://unpkg.com/@webcomponents/custom-elements/custom-elements.min.js"></script> -->
+    <script src="node_modules/@webcomponents/custom-elements/custom-elements.min.js"></script>
+    <!--CLARITY ICONS API & ALL ICON SETS-->
+    <!-- <script src="https://unpkg.com/clarity-icons/clarity-icons.min.js"></script> -->
+    <script src="node_modules/@clr/icons/clr-icons.min.js"></script>
+    <!--JQuery-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="Dashboard.js"></script>
+  </head>
+
+  <body id="body">
+
+    <clr-main-container class="main-container">
+      <clr-header class="header-6 header">
+        <div class="branding">
+          <a class="logo-and-title" href="https://clarity.design" rel="noopener" target="_blank">
+            <clr-icon shape="cloud-scale"></clr-icon>
+            <span class="title">Hypervisor dashboard</span>
+          </a>
+        </div>
+        <div class="divider">
+        </div>
+      </clr-header>
+      
+      <div class="content-container">
+        <div id=content class="content-area">
+          <!-- <link rel="import" href="file://vCenters.html" /> -->
+        </div>
+        <nav id="leftnav" class="sidenav">
+            <section class="sidenav-content">
+                <a id="vCenterLink" class="nav-link active">vCenters</a>
+                <!-- <a id="EnclosureLink" class="nav-link">Enclosures</a> -->
+                <section class="nav-group collapsible">
+                    <input id="encl" type="checkbox">
+                    <label for="encl">Enclosures</label>
+                    <ul class="nav-list">
+                        <li><a id="EnclosureLink ASD" class="nav-link">Amsterdam</a></li>
+                        <li><a id="EnclosureLink RTD" class="nav-link">Rotterdam</a></li>
+                        <li><a id="EnclosureLink ARH" class="nav-link">Arnhem</a></li>
+                        <li><a id="EnclosureLink DHG" class="nav-link">Den Haag</a></li>
+                        <li><a id="EnclosureLink CCA" class="nav-link">Aalsmeer</a></li>
+                        <li><a id="EnclosureLink APD" class="nav-link">Apeldoorn</a></li>
+                        <li><a id="EnclosureLink HAA" class="nav-link">Haarlem</a></li>
+                    </ul>
+                </section>
+                <a id="SearchLink" class="nav-link">Searchpage</a>
+            </section>
+        </nav>
+      </div>
+    </clr-main-container>
+    <script>
+    </script>
+  </body>
+</html>
