@@ -1,16 +1,16 @@
 {
-  "name": "app",
+  "name": "app01",
   "version": "1.0.0",
   "description": "",
-  "main": "Dashboard.html",
+  "main": "Dashboard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@clr/icons": "^3.1.1",
-    "@clr/ui": "^3.1.1",
-    "@webcomponents/custom-elements": "^1.4.1"
+    "@clr/icons": "^4.0.2",
+    "@clr/ui": "^4.0.2",
+    "@webcomponents/custom-elements": "^1.4.2"
   }
 }
